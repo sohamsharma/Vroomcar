@@ -1,0 +1,217 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>VROOMCARS - Car Rental and more.. </title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css" />
+    <!--slider-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/superfish.js" type="text/javascript"></script>
+    <style type="text/css">
+        .style1
+        {
+            font-size: large;
+        }
+        #TextArea1
+        {
+            height: 1338px;
+            width: 455px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+    <div class="header-bg">
+        <div class="wrap">
+            <div class="h-bg">
+                <div class="total">
+                    <div class="header">
+                        <div class="box_header_user_menu">
+                            <ul class="user_menu">
+                                <li class="act first">
+                                    <div class="button-t">
+                                        <span style="text-decoration: underline">
+                                        <strong style="padding: 0px; font-size: small; vertical-align: baseline; margin-left: 0px; margin-bottom: 0px; margin-right: 0px; color: rgb(255, 0, 0); font-family: AmbleRegular; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: nowrap; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+                                        Customer Care: 1800800700</strong></span></div>
+                                    </a>
+                                <li class="">
+                                    <div class="button-t">
+                                        </div>
+                                </a></li>
+                                <li class="last"><a href="">
+                                    <div class="button-t">
+                                        &nbsp; <a href="">
+                                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                </a></div>
+                                </a></li>
+                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Default.aspx">Logout</asp:LinkButton>
+                            </ul>
+                        </div>
+                        <div class="header-bot">
+                            <div class="logo">
+                                <a href="Default2.aspx">
+                                    <img src="images/logo.png" alt="" height="80" width="180" /></a>
+                            </div>
+                           <%-- <div class="search">
+                                <input type="text" class="textbox" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                                <button class="gray-button">
+                                    <span>Search</span></button>
+                            </div>--%>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="top-nav">
+                            <ul>
+                                <li class="active"><a href="Default2.aspx">Home</a></li>
+                                <li><a href="Booklogin.aspx">Book Rides</a></li>
+                                <li><a href="car2.aspx">Cars</a></li>
+                                <li><a href="policy2.aspx">Policy</a></li>
+                                <li><a href="aboutus2.aspx">About Us</a></li>
+                            </ul>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-top">
+                        <div class="header-bottom">
+                            <div class="footer-bottom">
+                                <div class="copy" align="right" dir="rtl">
+                                    <p align="center" dir="rtl">
+                                        &nbsp;</p>
+                                    <div align="left" dir="ltr">
+                                        <%-- <div class="header-paraa" dir="ltr" align="left">--%>
+                                        <div style="position: relative; float: left; width: 700px">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                    </div>
+                                    <div class="header-para">
+                                        <div class="categories">
+                                            <div class="list-categories">
+                                                <div class="first-list">
+                                                    <div class="div_2">
+                                                        <strong class="style1"></strong><asp:LinkButton ID="LinkButton13" 
+                                                            runat="server" Font-Size="Large" ForeColor="#FF3300" 
+                                                             PostBackUrl="~/Booklogin.aspx">Hybrid</asp:LinkButton>
+                                                    </div>
+                                                    <div class="div_img">
+                                                        <img src="Cars/339f769379ab46a0b2fcae961dbc4a7c__1.jpg" alt="Cars" title="Cars" width="60"
+                                                            height="39">
+                                                    </div>
+                                                    <div class="clear">
+                                                        <hr />
+                                                    </div>
+                                                </div>
+                                                <div class="first-list">
+                                                    <div class="div_2">
+                                                        <asp:LinkButton ID="LinkButton12" 
+                                                            runat="server" Font-Size="Large" ForeColor="#FF3300" 
+                                                            PostBackUrl="~/Booklogin.aspx">Micro</asp:LinkButton>
+                                                    </div>
+                                                    <div class="div_img">
+                                                        <img src="Cars/2_Pearl-Artic-White.jpg" alt="Cars" title="Cars" width="60" height="39">
+                                                    </div>
+                                                    <div class="clear">
+                                                        <hr />
+                                                    </div>
+                                                </div>
+                                                <div class="first-list">
+                                                    <div class="div_2">
+                                                        <asp:LinkButton ID="LinkButton11" 
+                                                            runat="server" Font-Size="Large" ForeColor="#FF3300" 
+                                                           PostBackUrl="~/Booklogin.aspx">Sedan</asp:LinkButton>
+                                                    </div>
+                                                    <div class="div_img">
+                                                        <img src="Cars/2015-honda-fit-ex-1%20copy.jpg" alt="Cars" title="Cars" width="60"
+                                                            height="39">
+                                                    </div>
+                                                    <div class="clear">
+                                                        <hr />
+                                                    </div>
+                                                </div>
+                                                <div class="first-list">
+                                                    <div class="div_2">
+                                                        <asp:LinkButton ID="LinkButton10" 
+                                                            runat="server" Font-Size="Large" ForeColor="#FF3300" 
+                                                            PostBackUrl="~/Booklogin.aspx">SUV</asp:LinkButton>
+                                                    </div>
+                                                    <div class="div_img">
+                                                        <img src="Cars/toyota-car-image-and-price-in-india-toyota-fortuner-trd-sportivo-limited-edition-gwaUpQ.jpg"
+                                                            alt="Cars" title="Cars" width="60" height="39">
+                                                    </div>
+                                                    <div class="clear">
+                                                        <hr />
+                                                    </div>
+                                                </div>
+                                                <div class="first-list">
+                                                    <div class="div_2">
+                                                        <asp:LinkButton ID="LinkButton9" 
+                                                            runat="server" Font-Size="Large" ForeColor="#FF3300" 
+                                                             PostBackUrl="~/Booklogin.aspx">Luxury</asp:LinkButton>
+                                                    </div>
+                                                    <div class="div_img">
+                                                        <img src="images/car4.jpg" alt="Cars" title="Cars" width="60" height="39"></div>
+                                                    <div class="clear">
+                                                        <hr />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <%--<div class="box">
+                                            <div class="box-heading">
+                                                <h1>
+                                                    <a href="#">Rides:&nbsp;</a></h1>
+                                            </div>
+                                            <div class="box-content">
+                                                Rides in your cart:
+                                                <asp:Label ID="Label2" runat="server" Text="None"></asp:Label>
+                                                &nbsp;<strong> </strong>
+                                            </div>
+                                        </div>--%>
+                                        <div class="box-title">
+                                            <h1>
+                                                <span class="title-icon"></span><a href="aboutus2.aspx">Branches</a></h1>
+                                        </div>
+                                         <div class="section group example"><a href="aboutus.aspx">
+                                            <div class="col_1_of_2 span_1_of_2">
+                                                <img src="images/New folder (2)/Agra.jpg" alt="" />
+                                                <img src="images/New%20folder%20(2)/ldh.jpg" alt="" />                                             
+                                                <img src="images/New%20folder%20(2)/chd%20(1).jpg" alt="" />
+                                                <img src="images/New folder (2)/Mumbai.jpg" alt="" />
+                                            </div>
+                                            <div class="col_1_of_2 span_1_of_2">
+                                                <img src="images/New folder (2)/Jaipur.jpg" alt="" />
+                                                <img src="images/New%20folder%20(2)/kol.jpg" alt="" />
+                                                  <img src="images/New folder (2)/Amritsar.jpg" alt="" />
+                                                <img src="images/New%20folder%20(2)/vizzag.jpg" alt="" />
+                                            </div>
+                                            <div class="clear"></a>
+                                            </div>
+                                        </div>
+                                        <div class="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+  
+    </form>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Copyright © 2017&nbsp;&nbsp;&nbsp; Soham Sharma &amp; Simranjeet Singh</p>
+</body>
+</html>
